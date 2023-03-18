@@ -1,8 +1,8 @@
 import 'dart:io';
 
-// Circle Circumference
+// Circle Calculate programme
 
-class Circle {
+class Thecircle {
   double _raDius = 0;
   set radius(double val) {
     _raDius = val;
@@ -15,7 +15,7 @@ class Circle {
   }
 }
 
-// Student Data
+// Student Information Programme
 
 class Student {
   late String _name;
@@ -58,7 +58,7 @@ class Student {
   }
 }
 
-// Book Data
+// Book information Programme
 class Book {
   late String _title;
   late String _Author;
@@ -97,7 +97,7 @@ class Book {
   }
 }
 
-// Course Data
+// Course Detail Check Programme
 
 class Course {
   late String _name;
@@ -126,7 +126,7 @@ class Course {
   }
 }
 
-// Bank Info
+// Bank Account Detail Information Programme
 
 class BankAccount {
   double _balance = 0;
@@ -161,15 +161,15 @@ class Bank {
 }
 
 void main() {
-  print("--------Circle Circumference--------");
+  print("******Circle Circumference*******");
   Circle cr = Circle();
   cr.radius = 30;
   print(cr.radius);
   print(cr.Calculate_Circumference());
 
   print("\n\n--------Student Data--------");
-  Student student_1 = Student("Hamza", 19, "OOP", 3.5);
-  Student student_2 = Student("Kumail", 18, "ICT", 3.5);
+  Student student_1 = Student("Yasir", 19, "OOP", 3.5);
+  Student student_2 = Student("Kashif", 18, "ICT", 3.5);
   print("--------Student 1--------");
   print("Name: " + student_1.name);
   print("Major: " + student_1.major);
@@ -181,10 +181,10 @@ void main() {
   print("Age: " + student_2.age.toString());
   print("GPA: " + student_2.gpa.toString());
 
-  print("\n\n--------Book Data--------");
-  print("--------Book 1 Data--------");
-  // Book_1 = "https://books.google.com.pk/books/about/Clean_Code.html?id=_i6bDeoCQzsC&source=kp_cover&redir_esc=y"
-  // Book_2 = "https://books.google.com.pk/books?id=ML9Jzb7SL9EC&source=gbs_similarbooks"
+  print("\n\n*****Book Info*******");
+  print("******Book 1 Info******");
+ 
+
   Book Book_1 = Book("Clean Code: A Handbook of Agile Software Craftsmanship",
       "Robert C. Martin", "Pearson Education", 28.99);
   Book Book_2 = Book("Agile Java¿: Crafting Code with Test-Driven Development",
@@ -212,8 +212,8 @@ void main() {
 
   print("\n\n--------Bank Data--------");
   Bank Account_control = Bank();
-  BankAccount Account_1 = BankAccount("Muhammad Hamza", 1056787.43);
-  BankAccount Account_2 = BankAccount("Kumail Abbas", 656787.46);
+  BankAccount Account_1 = BankAccount("Yasir", 1234567.30);
+  BankAccount Account_2 = BankAccount("Kashif", 543210.35);
   Account_control.addAccount(Account_1);
   Account_control.addAccount(Account_2);
 
